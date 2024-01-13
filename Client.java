@@ -63,6 +63,7 @@ class Sender implements Runnable {
                 String message = scanner.nextLine();
                 oos.writeObject(message);
                 oos.flush();
+                System.out.println();
 
                 if (message.equals("exit")) {
                     break;
